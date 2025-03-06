@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-r0zqya5i^x4zq^_*(82p3$t*v8r@2)6x6zp3hw53e0!#ss3g73'
+SECRET_KEY = 'django-insecure-*yd2gz#pwxm$u7ku%-b&4fzwvba$%e3h1q#@s_t_0**0b@8*1&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -123,22 +123,21 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
-    'handlers': {
-        'file': {
+    'handlers':{
+        'file':{
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
             'filename': './debug.log',
         },
     },
-    'loggers': {
-        'django': {
-            'handlers': ['file'],
+    'loggers':{
+        'django':{
+            'handlers':['file'],
             'level': 'DEBUG',
             'propagate': True,
         },
     },
- }
+}
